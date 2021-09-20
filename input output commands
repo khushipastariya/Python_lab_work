@@ -1,0 +1,84 @@
+# python input operations
+
+# just provide a value and entered value prints
+print(input())
+
+# provide another value
+x = input()
+print("Your input is: ", x)
+
+# prompting message for input
+val1 = input("Enter a value: ")
+val2 = input("Enter another value: ")
+val3 = input("Enter another value: ")
+
+# printing values
+print("val1 =", val1)
+print("val2 =", val2)
+print("val3 =", val3)
+
+Output
+
+Hello
+Hello
+I'm Shivang!
+Your input is:  I'm Shivang!
+Enter a value: 100
+Enter another value: 23.45
+Enter another value: Helllooooooo
+val1 = 100
+val2 = 23.45
+val3 = Helllooooooo
+
+#Formatting Output
+
+name = "KHUSHI"
+
+# Output
+print(f'Hello {name}! How are you?')
+Output: 
+
+Hello Khushi! How are you?
+
+#string formatting using format() function
+a = 20
+b = 10
+sum = a + b
+sub = a- b
+
+# Output
+ print('The value of a is {} and b is {}'.format(a,b))
+ print('{2} is the sum of {0} and {1}'.format(a,b,sum))
+ print('{sub_value} is the subtraction of {value_a} and {value_b}'.format(value_a = value_b = b,sub_value = sub))
+Output:
+
+The value of a is 20 and b is 10
+30 is the sum of 20 and 10
+10 is the subtraction of 20 and 10
+
+#Split Function 
+text = 'How are you'
+
+# Splits at space
+print(text.split())
+
+word = 'How, are, you'
+
+# Splits at ','
+print(word.split(','))
+
+word = 'How:are:you'
+
+# Splitting at ':'
+print(word.split(':'))
+
+word = 'CatBatSatFatOr'
+
+# Splitting at t
+print(word.split('t'))
+Output :
+
+['How', 'are', 'you']
+['How', ' are', ' you']
+['How', 'are', 'you']
+['Ca', 'Ba', 'Sa', 'Fa', 'Or']
