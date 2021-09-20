@@ -1,0 +1,78 @@
+#1.adding by lambda
+adder = lambda x, y: x + y
+ print (adder (1, 2))
+ output:
+ 3
+#A REGULAR FUNCTION
+def guru( funct, *args ):
+funct( *args )
+def printer_one( arg ):
+return print (arg)
+def printer_two( arg ):
+print(arg)
+
+#CALL A REGULAR FUNCTION 
+guru( printer_one, 'printer 1 REGULAR CALL' )
+guru( printer_two, 'printer 2 REGULAR CALL \n' )
+#CALL A REGULAR FUNCTION THRU A LAMBDA
+guru(lambda: printer_one('printer 1 LAMBDA CALL'))
+guru(lambda: printer_two('printer 2 LAMBDA CALL'))
+
+Output:
+printer 1 REGULAR CALL
+printer 2 REGULAR CALL
+printer 1 LAMBDA CALL
+printer 2 LAMBDA CALL
+
+#Using lambdas with Python built-ins
+IIFE in Python Lambda
+ (lambda x: x + x)(2)
+ 
+#lambdas in filter()
+sequences = [10,2,8,7,5,4,3,11,0, 1]
+filtered_result = filter (lambda x: x > 4, sequences) 
+print(list(filtered_result))
+Here’s the output:
+[10, 8, 7, 5, 11]
+
+
+#lambdas in map()
+sequences = [10,2,8,7,5,4,3,11,0, 1]
+filtered_result = map (lambda x: x*x, sequences) 
+print(list(filtered_result))
+Output:
+ [100, 4, 64, 49, 25, 16, 9, 121, 0, 1]
+
+# Python program to demonstrate
+# lambda functions
+
+string ='Hey Khushi'
+
+# lambda returns a function object
+print(lambda string : string)
+Output
+<function <lambda> at 0x7f65e6bbce18>
+
+#lambdas in reduce()
+sequences = [1,2,3,4,5]
+product = reduce (lambda x, y: x*y, sequences)
+print(product)
+Here is the output:
+120
+
+# importing functools for reduce()
+import functools
+
+# initializing list
+lis = [1, 3, 5, 6, 2, ]
+
+# using reduce to compute sum of list
+print("The sum of the list elements is : ", end="")
+print(functools.reduce(lambda a, b: a+b, lis))
+
+# using reduce to compute maximum element from list
+print("The maximum element of the list is : ", end="")
+print(functools.reduce(lambda a, b: a if a > b else b, lis))
+Output
+The sum of the list elements is : 17
+The maximum element of the list is : 6
