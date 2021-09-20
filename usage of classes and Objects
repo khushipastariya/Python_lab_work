@@ -1,0 +1,162 @@
+#CLASS AND OBJECT 
+class Dog:
+     #class attribute
+    attr1 = "mammal"
+    attr2 = "dog"
+
+    def fun(self):
+        print("I'm a", self.attr1)
+        print("I'm a", self.attr2)
+
+# Driver code
+# Object instantiation
+Rodger = Dog()
+print(Rodger.attr1)
+Rodger.fun()
+
+Output: 
+mammal
+I'm a mammal
+I'm a dog
+
+
+#Class and Instance Variables
+
+# Class for Dog
+class Dog:
+
+    # Class Variable
+    animal = 'dog'            
+
+    # The init method or constructor
+    def _init_(self, breed, color):
+
+        # Instance Variable    
+        self.breed = breed
+        self.color = color       
+
+# Objects of Dog class
+Rodger = Dog("Pug", "brown")
+Buzo = Dog("Bulldog", "black")
+
+print('Rodger details:')  
+print('Rodger is a', Rodger.animal)
+print('Breed: ', Rodger.breed)
+print('Color: ', Rodger.color)
+
+print('\nBuzo details:')  
+print('Buzo is a', Buzo.animal)
+print('Breed: ', Buzo.breed)
+print('Color: ', Buzo.color)
+
+# Class variables can be accessed using class
+# name also
+print("\nAccessing class variable using class name")
+print(Dog.animal) 
+
+Output: 
+Rodger details:
+Rodger is a dog
+Breed:  Pug
+Color:  brown
+
+Buzo details:
+Buzo is a dog
+Breed:  Bulldog
+Color:  black
+
+Accessing class variable using class name
+dog
+
+#Stack  Using list
+stack = ["Amar", "Akbar", "Anthony"]
+stack.append("Ram")
+stack.append("Iqbal")
+print(stack)
+
+# Removes the last item
+print(stack.pop())
+print(stack)
+
+Output:
+['Amar', 'Akbar', 'Anthony', 'Ram', 'Iqbal']
+Iqbal
+['Amar', 'Akbar', 'Anthony', 'Ram']
+Ram
+['Amar', 'Akbar', 'Anthony']
+
+# Queue using list
+queue = ["Amar", "Akbar", "Anthony"]
+queue.append("Ram")
+queue.append("Iqbal")
+print(queue)
+print(queue.pop(0))
+print(queue)
+
+#QUEUE IMPLIMENTATION USING LIST
+# Initializing a queue
+queue = []
+
+# Adding elements to the queue
+queue.append('a')
+queue.append('b')
+queue.append('c')
+
+print("Initial queue")
+print(queue)
+
+print("\nElements dequeued from queue")
+print(queue.pop(0))
+print(queue.pop(0))
+print(queue.pop(0))
+
+print("\nQueue after removing elements")
+print(queue)
+Output: 
+ Initial queue
+['a', 'b', 'c']
+Elements dequeued from queue
+a
+b
+c
+Queue after removing elements
+[]
+
+#Using LIST implimenting stack using Deque
+from collections import deque
+queue = deque(["Ram", "Tarun", "Asif", "John"])
+print(queue)
+queue.append("Akbar")
+print(queue)
+queue.append("Birbal")
+print(queue)
+print(queue.pop())				
+print(queue.pop())				
+print(queue)
+
+Output:
+deque(['Ram', 'Tarun', 'Asif', 'John'])
+deque(['Ram', 'Tarun', 'Asif', 'John', 'Akbar'])
+deque(['Ram', 'Tarun', 'Asif', 'John', 'Akbar', 'Birbal'])
+Birbal
+Akbar
+deque(['Ram', 'Tarun', 'Asif', 'John'])
+
+#QUEUE USING DEQUEUE
+from collections import deque
+queue = deque(["Ram", "Tarun", "Asif", "John"])
+print(queue)
+queue.append("Akbar")
+print(queue)
+queue.append("Birbal")
+print(queue)
+print(queue.popleft())				
+print(queue.popleft())				
+print(queue)
+Output:
+deque(['Ram', 'Tarun', 'Asif', 'John'])
+deque(['Ram', 'Tarun', 'Asif', 'John', 'Akbar'])
+deque(['Ram', 'Tarun', 'Asif', 'John', 'Akbar', 'Birbal'])
+Ram
+Tarun
+deque(['Asif', 'John', 'Akbar', 'Birbal'])
