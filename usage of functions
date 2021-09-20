@@ -1,0 +1,56 @@
+#Define a function
+def plus(a,b):
+  return a + b
+
+#Create a `Summation` class
+class Summation(object):
+  def sum(self, a, b):
+    self.contents = a + b
+    return self.contents
+
+sumInstance = Summation()
+sumInstance.sum(1,2)
+
+#Passing a List as an Argument
+def my_function(food):
+  for x in food:
+    print(x)
+fruits = ["apple", "banana", "cherry"]
+my_function(fruits)
+
+#recursive function
+def factorial(x):
+"""This is a recursive function
+   to find the factorial of an integer"""
+if x == 1:
+ return 1
+ else:
+ return (x * factorial(x-1))
+ num = 3
+
+#Global and Local Variables in Python
+a = 1
+
+# Uses global because there is no local 'a'
+def f():
+print('Inside f() : ', a)
+
+# Variable 'a' is redefined as a local
+def g():   
+a = 2
+print('Inside g() : ', a)
+
+# Uses global keyword to modify global 'a'
+def h():   
+    global a
+    a = 3
+    print('Inside h() : ', a)
+
+# Global scope
+print('global : ',a)
+f()
+print('global : ',a)
+g()
+print('global : ',a)
+h()
+print('global : ',a)
