@@ -1,0 +1,127 @@
+#Display float number with 2 decimal places using print()
+float = 2.154327 
+format_float = "{:.2f}".format(float) 
+print(format_float)
+
+output 
+2.15
+
+#Takes two integer numbers and  return their product.
+num1=int(input("Enter the first number: "))
+num2=int(input("Enter the second number: "))
+mul=num1*num2;
+print("the product of given numbers is: ",mul)
+
+Output:-
+Enter the first number: 23
+Enter the second number is: 32
+the product of the given numbers is 736
+
+#Write a Python program to get the volume of a sphere with radius 10.
+pi = 3.1415926535897931
+r= 10.0
+V= 4.0/3.0*pi* r**3
+print('The volume of the sphere is: ',V)
+
+Output:
+The volume of the sphere is:  4188.790204786391
+
+#Accept two numbers from the user and multiply them together.
+num_1 = 2
+num_2 = 3 
+product = num_1 * num_2 
+print("Product of {} and {} is {}".format(num_1, num_2,product))
+
+Output
+Product of 2 and 3 is 6
+
+#Write a Python program that accepts an integer (a) and computes the value of a+aa+aaa+aaaa.
+ digit=int(input("Enter digit:"))
+num=input("enter a number:")
+ result=0
+for i in range(1,digit+1):
+  result= result + int(str(num*i))
+  print(num*i)
+ print("________________+\n")
+print(result)
+Output:
+Enter digit:10
+enter a number:2
+2
+22
+222
+2222
+22222
+222222
+2222222
+22222222
+222222222
+2222222222
+________________+
+ 
+2469135800
+ 
+#Write a Python program to calculate the length of a string
+str = input("Enter a string: ")
+print("Length of the input string is:", len(str))
+
+Output:
+Enter a string: Chaitanya
+Length of the input string is: 9
+
+#Write a Python program to parse a string to Float & Integer
+#Parse string into integer
+balance_str = "1500"
+balance_int = int(balance_str)
+print(type(balance_int)) #type
+print(balance_int) #value
+
+Output
+<class 'int'>
+1500
+
+Parse string into float
+balance_str = "1500.4"
+balance_float = float(balance_str)
+print(type(balance_float))
+print(balance_float)
+
+Output
+<class 'float'>
+1500.4
+
+#Given two integer numbers return their sum. If the sum is greater than 100, then return their product.
+number1 = eval(input("enter 1st number : "))
+
+number2 = eval(input("enter 2nd number : "))
+
+if (number1 + number2) > 100:
+
+   print("The result is : ",(number1 * number2))
+
+else:
+
+   print("The result is : ",(number1+ number2))
+def sum_thrice(x, y, z):
+
+     sum = x + y + z
+  
+     if x != y != z:
+      sum = sum * 4
+     return sum
+
+print(sum_thrice(1, 2, 3))
+print(sum_thrice(3, 3, 3))
+
+#To check whether a number is divisible by 8 and 12 or not.
+number = int(input(" Please Enter any Positive Integer : "))
+
+if((number % 8 == 0) and (number % 12== 0)):
+    print("Given Number {0} is Divisible by 8 and 12".format(number))
+else:
+    print("Given Number {0} is Not Divisible by 8 and 12".format(number))
+
+Output
+Please Enter any Positive Integer : 55
+Given Number 55 is Divisible by 5 and 11
+> 
