@@ -1,0 +1,366 @@
+# Python_lab_work
+#1
+n= float(input("Enter a float number:- "))
+d= "{:.2f}".format(n)
+print(d)
+Enter a float number:- 4.3689
+4.37
+
+#2
+a= int(input("Enter the intiger: "))
+b= int(input("Enter another intiger: "))
+print("Product= ",a*b)
+
+Enter the intiger: 5
+Enter another intiger: 10
+Product=  50
+
+#3
+r= 10
+pi= 3.14
+vol= (4*pi*r*r*r)/3
+print("Volume of sphere= ",vol)
+
+Volume of sphere=  4186.666666666667
+
+#4
+num1= int(input("Enter first number:- "))
+num2= int(input("Enter second number:- "))
+print("Product= ",num1*num2)
+
+Enter first number:- 13
+Enter second number:- 15
+Product=  195
+
+#5
+a= int(input("Enter an intiger= "))
+SOP= a + a*a + a*a*a
+print(SOP)
+
+Enter an intiger= 2
+14
+
+#6
+string= str(input("Enter a string:- "))
+l= len(string)
+print("Length of a given string is ",l)
+
+Enter a string:- Aayush
+Length of a given string is  6
+
+#7
+str_1= "120"
+str_2= "120.5"
+print("Parsed into INT= ",int(str_1))
+print("Parsed into FLOAT= ",float(str_2))
+
+Parsed into INT=  120
+Parsed into FLOAT=  120.5
+
+#8
+num1= int(input("Enter a number:- "))
+num2= int(input("Enter another number:- "))
+c= num1+num2
+if(c>100):
+  print("Since sum is greater 100 so the product will be",num1*num2)
+else:
+  print("Sum of two number is ",c)
+  
+  Enter a number:- 30
+Enter another number:- 80
+Since sum is greater 100 so the product will be 2400
+
+#9
+a= 10
+b= 10
+c= 20
+if(a==b==c):
+  print("Sum is:- ",a+b+c)
+else:
+  print("Sum is:- ",a+b+c)
+  print("Product is:- ",a*b*c)
+Sum is:-  40
+Product is:-  2000
+
+#10
+price= 100
+n= int(input("Enter a number of quantity you purchased:- "))
+tot_price= n*100
+dscnt= 0
+if(tot_price>10000):
+  dscnt= tot_price*0.5
+  print("Your bill with 50% discount= ",dscnt)
+else:
+  print("Your total bill is:- ",tot_price,"\n          Discount:- ",dscnt)
+  
+  Enter a number of quantity you purchased:- 5
+Your total bill is:-  500 
+          Discount:-  0
+          
+#11
+n= int(input("Enter a number:- "))
+if(n%8==0 and n%12==0):
+  print("Number is divisible by both 8 and 12...")
+else:
+  print("Number can be divisible by either 8 or 12 \nOR\nnot divisible by both")
+  
+  Enter a number:- 56
+Number can be divisible by either 8 or 12 
+OR
+not divisible by both
+
+#12
+n= int(input("Enter a number:- "))
+if(n%2==0):
+  print("The number is even")
+else:
+  print("The number is odd")
+  
+  Enter a number:- 6
+The number is even
+
+#13
+a= int(input("Enter the marks of PHYSICS:- "))
+b= int(input("Enter the marks of CHEMISTRY:- "))
+c= int(input("Enter the marks of BIOLOGY:- "))
+d= int(input("Enter the marks of MATHEMATICS:- "))
+e= int(input("Enter the marks of COMPUTER10:- "))
+Tot_marks= (a+b+c+d+e)
+prcntg= (Tot_marks*100)/500
+print(10)
+if(a>100 or b>100 or c>100 or d>100 or e>100):
+  print("Marks are invalid...")
+else:
+  if(prcntg>= 90):
+   print("\nGrade A")
+  elif(prcntg>= 80):
+   print("\nGrade B")
+  elif(prcntg>= 70):
+   print("\nGrade C")
+  elif(prcntg>= 60):
+   print("\nGrade D")
+  elif(prcntg>= 40):
+   print("\nGrade E")
+  elif(prcntg< 40):
+   print("\nGrade F")
+  print("Total Percentage:- ",prcntg,"%")
+  
+  Enter the marks of PHYSICS:- 100
+Enter the marks of CHEMISTRY:- 100
+Enter the marks of BIOLOGY:- 100
+Enter the marks of MATHEMATICS:- 100
+Enter the marks of COMPUTER10:- 100
+Grade A
+Total Percentage:-  100.0 %
+
+#14
+A= int(input("Enter the age of Aayush:- "))
+Y= int(input("Enter the age of Yash:- "))
+P= int(input("Enter the age of Pranay:- "))
+if(A<Y and A<P):
+  print("Aayush is youngest guy...")
+elif(Y<P and Y<A):
+  print("Yash is youngest guy...")
+elif(P<A and P<Y):
+  print("Pranay is youngest guy...")
+else:
+  print("All 3 are of same ages")
+  
+  Enter the age of Aayush:- 20
+Enter the age of Yash:- 20
+Enter the age of Pranay:- 20
+All 3 are of same ages
+
+#15
+units= int(input("Enter the number of units:- "))
+if (units<= 50):
+  charges= (0.5*units)+ 20/100
+  print("Electricity Bill:- ",charges)
+elif(units<= 100):
+  charges= (0.75*units)+ 20/100
+  print("Electricity Bill:- ",charges)
+elif(units<= 250):
+  charges= (1.20*units)+ 20/100
+  print("Electricity Bill:- ",charges)
+elif(units> 250):
+  charges= (1.50*units)+ 20/100
+  print("Electricity Bill:- ",charges)
+ 
+Enter the number of units:- 370
+Electricity Bill:-  555.2
+
+#16
+tc= int(input("Total number of working days:- "))
+c= int(input("total no of days worked:- "))
+percentage= (c*100)/tc
+if(percentage<80):
+  print("Not eligible for exam...")
+else:
+  print("eligible for exam...")
+  
+  Total number of working days:- 150
+total no of days worked:- 120
+eligible for exam...
+
+#18
+n= int(input("Enter a number: "))
+sum= 0
+while n>0:
+  r= n%10
+  sum= sum+ r
+  n= n//10
+print(sum)
+Enter a number: 34
+7
+
+#19
+n= int(input("Enter a number:- "))
+p= 1
+while n>0:
+  r= n%10
+  p= p*r
+  n= n//10
+print(p)
+
+Enter a number:- 23
+6
+
+#21
+n= int(input("Enter a number of rows: "))
+for i in range(n):
+  for j in range(0, i+1):
+    print("*",end= ' ')
+  print(" ")
+for i in range(n+1,0,-1):
+  for j in range(0,i-2):
+    print("*",end= ' ')
+  print(" ")
+  
+Enter a number of rows: 5
+*  
+* *  
+* * *  
+* * * *  
+* * * * *  
+* * * *  
+* * *  
+* *  
+*  
+ 
+ #22
+n= int(input("Enter a number to reverse:- "))
+rev= 0
+while(n>0):
+  r= n%10
+  rev= rev*10 + r
+  n= n//10
+print(rev)
+
+321
+#23
+n= int(input("Enter a number to reverse:- "))
+x= n
+rev= 0
+while(n>0):
+  r= n%10
+  rev= rev*10 + r
+  n= n//10
+print(rev)
+if (x==rev):
+  print(x,"is Palindrome")
+else:
+  print(x,"is not Palindrome")
+  
+  Enter a number to reverse:- 434
+434
+434 is Palindrome
+
+#24 
+sum= 0
+n= int(input("Enter a number:- "))
+num= n
+while(n>0):
+  r= num%10
+  sum= sum + r**3
+  num= num//10
+if num==sum:
+  print(num,"is amstrong number...")
+else:
+  print(num,"is not amstrong number...")
+  
+  Enter a number:- 153
+  
+  #25
+num= int(input("Enter a number to find factorial:- "))
+f= 1
+for i in range(1,num+1):
+  f= f*i
+print("Factorial of",num,"is",f)
+Enter a number to find factorial:- 5
+Factorial of 5 is 120
+
+#26
+non
+['n', 'o', 'n']
+None
+
+#30
+n= int(input("Enter the number of rows: "))
+for i in range(n+1,0,-1):
+  for j in range(0,i-1):
+    print("*",end=' ')
+  print(" ")
+  
+  Enter the number of rows: 5
+* * * * *  
+* * * *  
+* * *  
+* *  
+*  
+ #34
+string= str(input("Enter the string: "))
+print("The length of a given string: ",len(string))
+
+Enter the string: Aayush
+The length of a given string:  6
+
+#35
+str1= input("Enter the first string: ")
+str2= input("Enter the second string: ")
+lst_1= list(str1)
+lst_2= list(str2)
+s= lst_1[0]
+lst_1[0]= lst_2[0]
+lst_2[0]= s
+print("Swaping after first charachter of both the strings:- \n",''.join(lst_1),"and",''.join(lst_2))
+
+Enter the first string: abc
+Enter the second string: xyz
+Swaping after first charachter of both the strings:- 
+ xbc and ayz
+ 
+ #36
+suffix= "polis"
+str1= input("Enter the string: ")
+n= len(str1)
+if (n>3):
+  print(str1)
+elif (n>=3):
+  print(str1+suffix)
+Enter the string: abc
+abcpolis
+
+#37
+word= input("Enter the string: ")
+lst= list(word)
+cnt= 0
+D_word= {}
+for i in lst:
+  key= i
+  value= lst.count(i)
+  D_word.update({key:value})
+print(D_word)
+
+  Enter the string: google.com
+{'g': 2, 'o': 3, 'l': 1, 'e': 1, '.': 1, 'c': 1, 'm': 1}
+[ ]
